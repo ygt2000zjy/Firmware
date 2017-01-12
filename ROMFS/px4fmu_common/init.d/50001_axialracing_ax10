@@ -4,8 +4,10 @@
 #
 # @type Rover
 #
-
+echo "5001_axialracing_ax10"
 sh /etc/init.d/rc.axialracing_ax10_defaults
+set VEHICLE_TYPE rover
 
-#choose a mixer, for rover control we need a plain passthrough to the servos
-set MIXER IO_pass
+
+usleep 10000
+set OUTPUT_MODE md25

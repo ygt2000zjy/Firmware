@@ -116,7 +116,8 @@ int md25_main(int argc, char *argv[])
 						 SCHED_PRIORITY_MAX - 10,
 						 2048,
 						 md25_thread_main,
-						 (const char **)argv);
+						 (argv) ? (char *const *)&argv[2] : (char *const *)NULL);
+
 		exit(0);
 	}
 

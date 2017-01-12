@@ -32,6 +32,8 @@ set(config_module_list
 	drivers/ll40ls
 	drivers/lsm303d
 	drivers/mb12xx
+	drivers/md25
+	#drivers/md26
 	drivers/meas_airspeed
 	drivers/mkblctrl
 	drivers/mpu6000
@@ -100,6 +102,7 @@ set(config_module_list
 	modules/load_mon
 	modules/mavlink
 	modules/navigator
+	modules/rover_md25_control
 	modules/uavcan
 
 	#
@@ -117,6 +120,7 @@ set(config_module_list
 	modules/fw_pos_control_l1
 	modules/mc_att_control
 	modules/mc_pos_control
+	modules/rv_pos_control
 	modules/vtol_att_control
 
 	#

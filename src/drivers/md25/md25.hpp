@@ -283,7 +283,7 @@ private:
 	float _motor2Current;
 	uint8_t _motorAccel;
 	e_mode _mode;
-	e_cmd _command;
+	e_cmd _ecommand;
 
 	// private methods
 	int _writeUint8(uint8_t reg, uint8_t value);

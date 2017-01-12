@@ -31,14 +31,18 @@
 #
 ############################################################################
 px4_add_module(
-	MODULE drivers__md25
-	MAIN md25
+	MODULE modules__rover_md25_control
+	MAIN rover_md25_control
+	STACK_MAIN 1200
 	COMPILE_FLAGS
-		-Wno-unused-but-set-variable
+		-Wframe-larger-than=1300
+		
 	SRCS
-		md25.cpp
-		md25_main.cpp
+		BlockEncoderPositionEstimator.cpp
+		main.cpp
+		FuzzyFB.cpp
+		rover_params.c
 	DEPENDS
 		platforms__common
 	)
-# vim: set noet ft=cmake fenc=utf-8 ff=unix :
+# vim: set noet ft=cmake fenc=utf-8 ff=unix : 

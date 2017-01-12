@@ -31,14 +31,17 @@
 #
 ############################################################################
 px4_add_module(
-	MODULE drivers__md25
-	MAIN md25
+	MODULE modules__rv_pos_control
+	MAIN rv_pos_control
+	STACK_MAIN 1200
 	COMPILE_FLAGS
-		-Wno-unused-but-set-variable
+		-Wno-float-equal
 	SRCS
-		md25.cpp
-		md25_main.cpp
+		rv_pos_control_main.cpp
 	DEPENDS
 		platforms__common
+		git_ecl
+		lib__external_lgpl
+		lib__ecl
 	)
-# vim: set noet ft=cmake fenc=utf-8 ff=unix :
+# vim: set noet ft=cmake fenc=utf-8 ff=unix : 

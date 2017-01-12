@@ -40,6 +40,7 @@ set(config_module_list
 	modules/fw_att_control
 	modules/fw_pos_control_l1
 	modules/land_detector
+	modules/local_position_estimator
 	modules/logger
 	modules/mavlink
 	modules/mc_att_control
@@ -47,8 +48,8 @@ set(config_module_list
 	modules/navigator
 	modules/param
 	modules/position_estimator_inav
-	modules/local_position_estimator
 	modules/replay
+	modules/rv_pos_control
 	modules/sdlog2
 	modules/sensors
 	modules/simulator

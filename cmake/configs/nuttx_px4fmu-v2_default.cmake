@@ -43,6 +43,7 @@ set(config_module_list
 	modules/sensors
 	#drivers/mkblctrl
 	drivers/px4flow
+	drivers/md25
 	#drivers/oreoled
 	#drivers/vmount
 	drivers/pwm_input
@@ -97,6 +98,7 @@ set(config_module_list
 	modules/gpio_led
 	modules/uavcan
 	modules/land_detector
+	#modules/rover_md25_control
 
 	#
 	# Estimation modules
@@ -113,6 +115,7 @@ set(config_module_list
 	modules/fw_att_control
 	modules/mc_att_control
 	modules/mc_pos_control
+	#modules/rv_pos_control
 	modules/vtol_att_control
 
 	#

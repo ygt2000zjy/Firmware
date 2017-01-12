@@ -30,20 +30,35 @@
  * POSSIBILITY OF SUCH DAMAGE.
  *
  ****************************************************************************/
-
+#include <systemlib/param/param.h>
 /*
- * @file params.c
+ * @file rover_params.c
  *
- * Parameters for rover demo
+ * Parameters for rover
  *
- * @author Lorenz Meier <lorenz@px4.io>
+ * @author BERNAT Frederic
  */
 
-#include "params.h"
 
-/* controller parameters, use max. 15 characters for param name! */
+
 
 /**
+ * Attenuation orientation.
  *
+ * @group Rover
  */
-//PARAM_DEFINE_FLOAT(RV_YAW_P, 0.1f);
+PARAM_DEFINE_FLOAT(RV_YAW_P, 0.09f);
+
+/**
+ * Facteur multipicatif pour la vitesse.
+ *
+ * @group Rover
+ */
+PARAM_DEFINE_FLOAT(RV_THR_CRUISE, 1.3f);
+
+/**
+ * Seuil de prise en compte de l orientation.
+ *
+ * @group Rover
+ */
+PARAM_DEFINE_FLOAT(RV_YAW_TRESH, 0.15f);
