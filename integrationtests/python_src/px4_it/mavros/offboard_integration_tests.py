@@ -100,7 +100,6 @@ def main(argv):
             
             if arg in tests_available:
                 do_tests = [arg]
-                print("Run {0}").format(arg)
                 
         else:
             print("Input not supported")

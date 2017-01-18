@@ -11,6 +11,8 @@ import MavrosDriver
 # rate at which msg are sent ot mavros
 run_event = threading.Event() # signal flag for running threads
 msg_thread = threading.Thread()
+
+
 def pub_msg(msg_rate,driver):
     
     # frequency of publishing
@@ -27,10 +29,7 @@ def pub_msg(msg_rate,driver):
 def run_tests(arg):
     
     """ Initialization """
-    
-    # catch ctrl-c
-    
-    
+       
     # interaction test node
     nh = rospy.init_node('integration_tests', anonymous=True)
     
